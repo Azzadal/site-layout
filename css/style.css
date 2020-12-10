@@ -71,6 +71,8 @@ body, .hh p{
 	font-family: Romul, sans-serif;
 	font-size: 14.58px;
 	opacity: 0.95;
+	animation-name: test;
+		animation-duration: 0.3s;
 }
 #burger .icon{
 	display: none;
@@ -787,6 +789,16 @@ body, .hh p{
     	margin-left: 8%;
 	}
 }
+
+@keyframes test{
+	0%{
+		width: 0;
+	}
+	100%{
+		width: 330px;
+	}
+}
+
 @media screen and (max-width: 900px){
 	.navi a, .bord{
 		display: none;
@@ -798,6 +810,7 @@ body, .hh p{
 	}
 	#myTopnav{
 		display: none;
+		
 	}
 	nav{
 		width: 100%;
@@ -807,6 +820,7 @@ body, .hh p{
 		position: absolute;
 	    top: 50px;
 	    left: -170px;
+	    width: 330px;
 	}
 	header .navi.responsive{
 		height: 200px;
